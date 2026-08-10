@@ -1,0 +1,183 @@
+{ "images": [
+    {
+      "imgId": 1,
+      "file": "profile_2.jpg",
+      "alt": "Mat Baker music teaching, songwriting",
+      "year": " (2025)",
+      "title": "",
+      "info": "Music Teaching, Workshops, Events, Songwriting"
+    },
+    {
+      "imgId": 2,
+      "file": "mat_baker_perform_2.jpg",
+      "alt": "Mat Baker Guitar teaching, performing",
+      "year": " (2025)",
+      "title": "",
+      "info": "Guitar - live performance"
+    },
+    {
+      "imgId": 3,
+      "file": "profile_4_bouzouki.jpg",
+      "alt": "Mat Baker bouzouki teaching, performing",
+      "year": " (2025)",
+      "title": "",
+      "info": "Bouzouki teaching and performing"
+    },
+    {
+      "imgId": 4,
+      "file": "Rhythm into Stillness_2.jpg",
+      "alt": "Mat Baker Rhythm into Stillness therapy",
+      "year": " (2025)",
+      "title": "",
+      "info": "Rhythm into Stillness therapy"
+    },
+    {
+      "imgId": 5,
+      "file": "profile_7_drums.jpg",
+      "alt": "Mat Baker Rhythm kids workshops",
+      "year": " (2025)",
+      "title": "",
+      "info": "Percussion workshops with school kids"
+    },
+    {
+      "imgId": 6,
+      "file": "mat_baker_perform_10.jpg",
+      "alt": "Mat Baker live events",
+      "year": " (2025)",
+      "title": "",
+      "info": "Ceremony - live performance"
+    },
+    {
+      "imgId": 7,
+      "file": "mat_baker_perform_11.jpg",
+      "alt": "Mat Baker percussion workshops",
+      "year": " (2025)",
+      "title": "",
+      "info": "Percussion workshops & live events"
+    },
+    {
+      "imgId": 8,
+      "file": "Mat_Baker_Drums_in_Yurt.jpg",
+      "alt": "Mat Baker live drums in Yurt",
+      "year": " (2025)",
+      "title": "",
+      "info": "Drums performance in a Yurt"
+    },
+    {
+      "imgId": 9,
+      "file": "ukelele_1.jpg",
+      "alt": "Mat Baker Ukelele Teaching",
+      "year": " (2025)",
+      "title": "",
+      "info": "Ukelele student"
+    },
+    {
+      "imgId": 10,
+      "file": "mat_baker_perform_3.jpg",
+      "alt": "Mat Baker live music",
+      "year": " (2025)",
+      "title": "",
+      "info": "Main Stage Performance"
+    },
+    {
+      "imgId": 11,
+      "file": "mat_baker_perform_4.jpg",
+      "alt": "Mat Baker live music",
+      "year": " (2025)",
+      "title": "",
+      "info": "Main Stage Performance"
+    },
+    {
+      "imgId": 12,
+      "file": "mic_1.jpg",
+      "alt": "Mat Baker songwriter",
+      "year": " (2025)",
+      "title": "",
+      "info": "Songwriting and studio recording"
+    },
+    {
+      "imgId": 13,
+      "file": "profile_6_bouzouki.jpg",
+      "alt": "Mat Baker bouzouki",
+      "year": " (2025)",
+      "title": "",
+      "info": "Bouzouki"
+    },
+    {
+      "imgId": 14,
+      "file": "mat_baker_perform_1.jpg",
+      "alt": "Mat Baker Guitar teaching, perform",
+      "year": " (2025)",
+      "title": "",
+      "info": "Guitar teaching and performing"
+    },
+    {
+      "imgId": 15,
+      "file": "Bakk Lamp Fall_1.jpg",
+      "alt": "Mat Baker live music",
+      "year": " (2025)",
+      "title": "",
+      "info": "Mat live with 'Bakk Lamp Fall'"
+    },
+    {
+      "imgId": 16,
+      "file": "Mat_Baker_Music_logo.jpg",
+      "alt": "Mat Baker Music logo",
+      "year": " (2025)",
+      "title": "",
+      "info": "Mat Baker Music logo"
+    },
+    {
+      "imgId": 17,
+      "file": "Guitar Man.jpg",
+      "alt": "Mat Baker Music drawing",
+      "year": " (2025)",
+      "title": "",
+      "info": "Mat Baker Music - guitar man"
+    }
+  ],
+  "videos": [
+    {
+      "Id": 1,
+      "ytId": "txP4tpgor30",
+      "info": "Mat Baker Guitar Showreel"
+    },
+    {
+      "Id": 2,
+      "ytId": "VjfNCFQZJxo",
+      "info": "Mat Baker Guitar Lessons"
+    },
+    {
+      "Id": 3,
+      "ytId": "loDFPlarnWM",
+      "info": "Mat Baker Rhythm into Stillnes"
+    },
+    {
+      "Id": 4,
+      "ytId": "Dsb7b8mUngc",
+      "info": "Mat Baker Percussion Demo"
+    }
+  ],
+  "songs": [
+    {
+      "Id": 1,
+      "file": "assets/01_Mat Baker_Flow Like A River.mp3",
+      "info": "'Flow Like A River' ( 2015 )"
+    },
+    {
+      "Id": 2,
+      "file": "assets/01 Track 1_perfect imperfections.mp3",
+      "info": "'Track 2 - perfect imperfections' ( 2016 )"
+    },
+    {
+      "Id": 3,
+      "file": "assets/02 Track 2_perfect imperfections.mp3",
+      "info": "'Track 3 - perfect imperfections' ( 2016 )"
+    },
+    {
+      "Id": 4,
+      "file": "assets/03 Track 3_perfect imperfections.mp3",
+      "info": "'Track 4 - perfect imperfections' ( 2016 )"
+    }
+  ]
+}

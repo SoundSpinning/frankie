@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+	GRID layout - Portofolio template
+    francesnarayanibaker.com
+	Made by Sound Spinning (soundspinning@hotmail.com)
+    Last Updated: 10-Aug-2026
+-->
+<head>
+	<!-- 1. Core Meta Tags -->
+	<!-- ================= -->
+	<!-- Character Encoding -->
+	<meta charset="UTF-8">
+	
+	<!-- Viewport (Mobile Optimization) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Code Author -->
+	<meta name="author" content="Sound Spinning" />
+	
+	<!-- Primary Title (Include Keywords + Location) -->
+	<title>Frances Narayani Baker | Therapist • Educator • Voice</title>
+
+	<!-- Meta Description (Include Services + Location + Call-to-Action) -->
+	<meta name="description" content="Music teaching, performance, East Sussex (UK). Contact for a personalised plan to learn music, percussion for all ages and levels. From one to one to schools.">
+
+	<!-- Canonical URL (Avoid Duplicate Content) -->
+	<link rel="canonical" href="https://francesnarayanibaker.com">
+
+	<!-- Favicon (All Sizes) - https://realfavicongenerator.net -->
+	<link rel="shortcut icon" href="./favicon.ico" />
+	<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Frances Narayani Baker Therapy" />
+	<link rel="manifest" href="./site.webmanifest" />
+
+	<!-- 2. Local SEO & Google Business Profile -->
+	<!-- ====================================== -->
+	<!-- Geo-Region Meta Tags -->
+	<!-- Country code -->
+	<meta name="geo.region" content="GB">
+	<!-- City name -->
+	<meta name="geo.placename" content="Polegate">
+	
+	<!-- Google Business Profile Verification (if applicable) -->
+	<meta name="google-site-verification" content="2098875125428845201">
+
+	<!-- Local Business Schema Markup (JSON-LD) -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "Frances Narayani Baker Music",
+	  "image": "https://francesnarayanibaker.com/Frances_Narayani_Baker_logo.png",
+	  "@id": "https://francesnarayanibaker.com",
+	  "url": "https://francesnarayanibaker.com",
+	  "telephone": "+4407976016103",
+	  "priceRange": "$$",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "4, Gwynne Gardens, North Rd, Alfriston",
+		"addressLocality": "Polegate",
+		"addressRegion": "East Sussex",
+		"postalCode": "BN26 5XA",
+		"addressCountry": "GB"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 50.8106852,
+		"longitude": 0.150852
+	  },
+	  "OpeningHoursSpecification": {
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+		"opens": "09:00",
+		"closes": "17:00"
+	  },
+	  "sameAs": [
+		"https://www.facebook.com/frances.narayani.baker/",
+        "https://maps.app.goo.gl/xLrn3Hy6X6aX4E8p9",
+		"https://share.google/IEazUCCgmDUl1PNHJ"
+	  ]
+	}
+	</script>
+
+	<!-- 3. Social Media & Open Graph (For Sharing) -->
+	<!-- ============================ -->
+	<!-- Open Graph (Facebook/LinkedIn) -->
+	<meta property="og:title" content="Frances Narayani Baker | Musician • Educator • Composer">
+	<meta property="og:description" content="Music teaching, performance, East Sussex (UK). Contact for a personalised plan to learn music, percussion for all ages and levels. From one to one to schools.">
+	<meta property="og:image" content="https://francesnarayanibaker.com/Frances_Narayani_Baker_logo.png">
+	<meta property="og:url" content="https://francesnarayanibaker.com">
+	<meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+	
+	<!-- Twitter Card (maybe redundant?) -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Frances Narayani Baker | Musician • Educator • Composer">
+	<meta name="twitter:description" content="Music teaching, performance, East Sussex (UK). Contact for a personalised plan to learn music, percussion for all ages and levels. From one to one to schools.">
+	<meta name="twitter:image" content="https://francesnarayanibaker.com/Frances_Narayani_Baker_logo.png">
+
+    <!-- 4. Technical SEO & Performance -->
+	<!-- ============================== -->
+    <!-- FONTS -->
+    <!-- Preconnect to Google Fonts/CDN -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> -->
+
+    <!-- https://fonts.bunny.net/ - do not track, faster than G-fonts [?] -->
+    <!-- <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=forum:400" rel="stylesheet" /> -->
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="css/fonts/Forum.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Include critical font faces inline -->
+    <style>
+      @font-face {
+        font-family: 'Forum';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('css/fonts/Forum.woff2') format('woff2');
+      }
+    </style>
+
+    <!-- Preload JSON to boost load speed -->
+    <link rel="preload" href="js/content.json" as="fetch" crossorigin="anonymous">
+
+    <!-- Preconnect to Image Hosts (e.g., Imgix CDN) -->
+    <link rel="preconnect" href="https://sound-spinning-pics.imgix.net">
+    
+    <!-- Main STYLES -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="./css/carousels.css" /> -->
+</head>
+
+<body id="home">
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#home" class="branding" title="Home">
+                <img src="favicon.svg" alt="Frances Narayani Baker Logo" class="logo">
+                <div class="branding-text">
+                    <h1>Frances Narayani Baker</h1>
+                    <p class="tagline">Musician • Educator • Composer</p>
+                </div>
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#performance">Performing</a></li>
+                    <!-- <li><a href="#teaching">Workshops</a></li> -->
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="grid-container">
+        <!-- About Section -->
+        <section id="about" class="card about">
+            <div class="card-content">
+                <!-- 3D Carousel -->
+                <!-- <section class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel-3d-wrapper">
+                            <div class="carousel-3d-track"> -->
+                                <!-- Populated by content.js -->
+                            <!-- </div>
+                        </div>
+                        <button class="carousel-nav carousel-prev" aria-label="Previous"><i class="bi bi-chevron-left"></i></button>
+                        <button class="carousel-nav carousel-next" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+                        <div class="carousel-indicators"></div>
+                    </div>
+                    <div id="carousel-fallback" style="display:none">
+                        <p>Content failed to load. Please refresh or check your connection.</p>
+                    </div>
+                </section> -->
+                <h2>Frances Narayani Baker</h2>
+                <div class="about-grid">
+                <div class="card card-main-image">
+                    <img src="https://sound-spinning-pics.imgix.net/mat/mat_baker_perform_13.jpg?w=800&auto=compress,enhance,format" alt="Frances Narayani Baker Music - Live Events">
+                </div>
+                <!-- <br> -->
+                <p>
+                    Mat is a passionate, accomplished and sensitive musician. He is a guitarist, singer, multi instrumentalist and percussionist who naturally weaves rhythm and melody to create beautiful music for any event. 
+                <!-- </p> -->
+                    <br><br>
+                <!-- <p> -->
+                    Mat is also an experienced music teacher and workshop facilitator. He has spent decades perfecting and evolving unique methods of music teaching to inspire his students of all ages and abilities.
+                </p>
+                </div>
+                <br>
+                <details>
+                    <summary><span class="cta">Bio</span></summary>
+                    <p>
+                        <br>
+                        Mat is a solo artist and teacher (<strong>guitar, bouzouki, ukulele, voice, drums & percussion</strong>).
+                        <br><br>
+                        He has performed live for <strong>over 35 years</strong>: solo, and alongside many international musicians. He's taught music for over 30 years, and has also recorded with a large range of international artists including <strong>Ladysmith Black Mambazo</strong> (South African acapella group).
+                        <br><br>
+                        Mat studied at the <strong>London Guitar Institute</strong>, as well as with various world renowned music teachers including Glen Velez (master frame drummer) and Reinhard Flatischler (Taketina). He has spent a number of years living in Spain, where he studied and soaked up the flamenco flavours.
+                        <br><br>
+                        He dedicates his career to both performing and teaching, sharing his passion for the joy of creating music.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Performance Section -->
+        <section id="performance" class="card performance">
+            <div class="card-image">
+                <img src="https://sound-spinning-pics.imgix.net/mat/profile_6_bouzouki.jpg?w=800&auto=compress,enhance,format" alt="Frances Narayani Baker Music - Live Events" loading="lazy">
+            </div>
+            <div class="card-content">
+                <h2>Live Performance</h2>
+                <p>Professional guitarist for all occasions and venues.</p>
+                <ul>
+                    <li>Weddings & celebrations</li>
+                    <li>Corporate & charity events</li>
+                    <li>Hotels & restaurants</li>
+                    <li>Memorial services</li>
+                </ul>
+                <!-- VID-live -->
+                <div class="video-item">
+                    <div class="video-thumb" 
+                         data-youtube-id="txP4tpgor30" 
+                         style="background-image: url(https://img.youtube.com/vi/txP4tpgor30/hqdefault.jpg)">
+                        <button class="play-button" aria-label="Play video">
+                            <i class="bi bi-play-circle-fill"></i>
+                        </button>
+                    </div>
+                    <p><i class="bi bi-film"> </i>Frances Narayani Baker - Guitar Showreel</p>
+                </div>
+                <details>
+                    <summary><span class="cta">Learn More</span></summary>
+                    <p>
+                        <br>
+                        Atmospheric acoustic music from an experienced, passionate and sensitive musician.
+                        <ul>
+                            <li>Mat creates an <strong>ambience and atmosphere</strong>, a beautiful background to your special event.</li>
+                            <li>He offers a unique mix of styles <strong>tailored to your needs</strong>, as well as bespoke arrangements.</li>
+                            <li>His main influences are <strong>Jazz, Folk, Classical, Celtic, Latin and Soul</strong>. He's also a singer and can include vocals in your song list.</li>
+                            <li>Mat has performed live for <strong>over 35 years</strong> solo, as well as alongside many international musicians.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>Equipment</strong>: <br>
+                        High quality compact and discreet sound system (AER) to adapt for intimate or larger gatherings. Battery amplification is also catered for. A microphone can be provided for speeches, as well as recorded background music during breaks.
+                    </p>
+                    <br>
+                    <details>
+                        <summary><strong>Sample Song List</strong> (click to open)</summary>
+                        <p>
+                            Happy Birthday! - Traditional & Stevie Wonder <br>
+                            You Are The Sunshine of My Life - Stevie Wonder <br>
+                            Norwegian Wood - The Beatles <br>
+                            Yesterday - The Beatles <br>
+                            Bloom (The Paper Kites) Inst. & Voc <br>
+                            Scarborough Fair - Traditional <br>
+                            Wild Mountain Thyme - Traditional <br>
+                            Keep Your Head Up - Ben Howard <br>
+                            Baby Can I Hold You Tonight - Tracy Chapman <br>
+                            Romance - Classical <br>
+                            Herencia Latina - Paco Peña <br>
+                            Entre Dos Aguas - Paco de Lucia <br>
+                            Aint No Sunshine - Bill Withers <br>
+                            Sally Gardens - Traditional <br>
+                            Drunken Sailor - Traditional <br>
+                            Many Rivers to Cross - Jimmy Cliff (UB40) <br>
+                            Fragile - Sting <br>
+                            So What - Miles Davis <br>
+                            All Blues - Miles Davis <br>
+                            Here comes the Sun - George Harrison (the Beatles) <br>
+                            Tomorrow the Sun Will Rise - unknown <br>
+                            Silent Night - Traditional <br>
+                            Aire de Flamenco <br>
+                            Every Breath You Take - The Police <br>
+                            How Insensitive - Antonio Carlos Jobim <br>
+                            Amazing Grace - Gospel traditional <br>
+                            Dance of a Dark Sea - unknown <br>
+                            Cavatina - Stanley Myers <br>
+                            Lokah Samastah - Traditional Peace mantra <br>
+                            Pretty Maid Milking Her Cow - Traditional Irish <br>
+                            Si Bheag Si Mhor - Turlough O’Carolan <br>
+                            Down to the River - Gospel Traditional <br>
+                            Ashokan Farewell - Traditional <br>
+                            Dirty Old Town - Ewan MacColl (the Pogues) <br>
+                            Nkosi Sikelel' iAfrika - Traditional South African <br>
+                            Sarvesham - Tina Turner inspired peace mantra <br>
+                            Gayatri Mantra - Traditional Indian <br>
+                            In the bleak midwinter - Holst <br>
+                            Greensleeves - traditional <br>
+                            Tears in Heaven - Eric Clapton <br>
+                            Don't know Why - Jesse Harris (Norah Jones) <br>
+                        </p>
+                    </details>
+                    <br>
+                    <a href="#contact"><button class="cta">Bookings & Info</button></a>
+                </details>
+            </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="card teaching">
+            <div class="card-content">
+                <h2>Music Education</h2>
+                <h3 id="lessons" style="padding-top: 0;">Teaching</h3>
+                <p>Private lessons - one to one or small groups, in person or online. All ages and levels.</p>
+                <ul>
+                    <li>Guitar</li>
+                    <li>Ukulele</li>
+                    <li>Percussion and Drums</li>
+                </ul>
+                <p>Groups of all ages and skills. Private lessons (in person or online). Adult beginner classes available.
+                </p>
+                <br>
+                <details>
+                    <summary><span class="cta">Learn About Lessons</span></summary>
+                    <p>
+                        <br>
+                        The <strong>joy and pleasure of being creative</strong> with a musical instrument is something we can all experience given the right support.
+                        <ul>
+                            <li>Learn the tricks and tools to play expressive and dynamic music.</li>
+                            <li>Tailor made lessons to inspire creativity and passion for adults and children.</li>
+                            <li>From one to one lessons at any age to kids workshops in schools.</li>
+                        </ul>
+                    </p>
+                    <a href="#contact"><button class="cta">Book a Lesson</button></a>
+                </details>
+
+                <br>
+                <div class="card-image">
+                <img src="https://sound-spinning-pics.imgix.net/mat/mat_baker_schools_1.jpg?w=800&auto=compress,enhance,format" alt="Frances Narayani Baker Music - School Kids Workshops, Percussion">
+                </div>
+
+                <h3>Workshops</h3>
+                <p>Engaging workshops and lessons for all ages and skill levels, specialising in rhythm, drumming, guitar & ukulele.</p>
+                <ul>
+                    <li>Corporate & Group Team Building Drumming & Rhythm Workshops</li>
+                    <li>School Drumming, Junk Percussion and Ukulele Workshops</li>
+                    <li>Groups of all ages and skills</li>
+                    <li><em>Rhythm into Stillness</em> Workshops (click below)</li>
+                </ul>
+                <details>
+                    <summary><span class="cta">Learn About Workshops</span></summary>
+                    <p>
+                        <br>
+                        <h4>Team Building Workshops</h4>
+                        Drumming and rhythm are an incredible team building tool. They can be unifying, empowering and bonding. We can all join in a rhythm, irrespective of ability. The power of listening and building rhythm together is a powerful, primal experience.  Mat is an experienced and engaging workshop facilitator who brings lightness, fun and creativity to all his workshops.
+                    </p>
+                    <p>
+                        <br>
+                        <h4>School Workshops</h4>
+                        <h5>Drum and Junk Percussion</h5>
+                        Children love to drum! It is an engaging and educational experience that encourages focus, coordination and listening skills. 
+                        <br><br>
+                        For younger children, drumming is a way to learn about numbers and develop concentration. For older children, it can help build confidence and creativity and support them to work together.  All the time being playful and fun, whilst experiencing a connection to music in the most primal way. People have drummed all over the world for thousands of years. 
+                        <br><br>
+                        Workshops are available for all ages from pre-school to year 12, including SEN. 
+                        <br>
+                        Drums are provided. 
+                        <br><br>
+                        <h5>Ukulele Workshops</h5>
+                        The ukulele is an accessible, easy, fun instrument that can be a gateway into the magic of playing music. Learning it combines rhythm, melody, and chords. The ukulele is a beautiful instrument in its own right, whilst also being a natural introduction to the world of stringed instruments. 
+                        <br><br>
+                        Workshops are suitable for all ages from 6 years, and can be for complete beginners or tailored for those with experience.  Instruments provided depending on numbers.
+                    </p>
+                    <p>
+                        <br>
+                        <h4>Rhythm into Stillness</h4>
+                        Join Mat for a rhythmical, meditative journey. A playful and challenging exploration into our body, mind and soul using drums, steps, claps, shakers and your voice.
+                        <ul>
+                            <li>Use different rhythmical patterns to support your growth in body awareness.</li>
+                            <li>Starting energetically we will move towards a place of inner stillness.</li>
+                            <li>No musical skills are necessary just an openness to explore.</li>
+                        </ul>
+                        <span style="position: relative; display: block;"><img class="stillness" src="assets/rhythm_into_stillness_logo.svg" alt="rhythm into stillness logo"></span>
+                    </p>
+                    <a href="#contact"><button class="cta">Book a Workshop</button></a>
+                </details>
+
+            </div>
+            <div class="card-image">
+                <img src="https://sound-spinning-pics.imgix.net/mat/profile_3b.jpg?w=800&auto=compress,enhance,format" alt="Frances Narayani Baker Music - Events, Teaching kids drumming">
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="media" class="card videos">
+            <div class="card-content">
+            <h2>Videos</h2>
+            <div class="video-grid">
+            <!-- Populated by content.js -->
+                <!-- Lazy-loaded YouTube iframe placeholder -->
+            </div>
+            <a href="https://www.youtube.com/@matbakermusic" target="_blank" rel="noopener"><button class="cta">More Videos</button></a>
+            </div>
+        </section>
+        
+        <!-- Composition Section -->
+        <section id="composition" class="card composition">
+            <div class="card-content">
+                <h2>Original Songs</h2>
+                <p>Mat has produced several albums and EPs with original compositions and lyrics.</p>
+                <div class="audio-player">
+                <!-- Populated by content.js -->
+                </div>
+                <a href="https://matbaker.bandcamp.com/" target="_blank" rel="noopener"><button class="cta">More Music</button></a>
+            </div>
+            <div class="card-image">
+                <img src="https://sound-spinning-pics.imgix.net/mat/mat_baker_perform_6.jpg?w=800&auto=compress,enhance,format" alt="Frances Narayani Baker recording in the studio" loading="lazy">
+            </div>
+        </section>
+        
+        <!-- Testimonials -->
+        <section id="testimonials" class="card testimonials">
+            <h2>What People Say</h2>
+            <div class="testimonial-grid">
+                <blockquote>
+                    <p>"Mat was hired to play acoustic guitar at our wedding, he did so much more than that. Mat took a very personal song to us and made his own acoustic arrangement of it creating a unique track that truly made our day beautiful, and brought a tear to multiple guests eyes, and my own! I can’t thank him enough for everything he did for our wedding, he was a great communicator before the day, keeping in regular contact in build up to the wedding. He suggested set lists and executed them with deft skill and beauty and created an atmosphere beyond what I could’ve imagined. Thank you Mat for all you did, we put our trust in you and from your first response to your final piece we couldn’t have asked for a better musician. You truly are the epitome of artist."</p>
+                    <cite>— Daniel M - Wedding</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Mat added that sprinkle of magic to our big day! He was friendly, talented and professional as he played and welcomed our guests. He's a great communicator and I would not hesitate in hiring him again or in recommending him to others! Fabulous!"</p>
+                    <cite>— Lucy S - Wedding</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Mat is an all-round professional musician and performer, with a warm heart for his music as well as his audience. I highly commend Mat’s musical craft and delivery without reservation and look forward to future projects with him"</p>
+                    <cite>— Thomas C - Event Organsier</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"On behalf of Children with Cancer Fund we would like to thank you for the beautiful atmosphere you created whilst playing at our 25 Year Ball. The atmosphere was wonderful; the music spoke to the space, we were delighted!"</p>
+                    <cite>— Janet C - Charity Event Organiser</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"We are so pleased we invited Mat to augment our wedding day celebrations. He played on and off, decorating the day and added an extra special something to the atmosphere. We had many lovely comments from our guests."</p>
+                    <cite>— Lorne C - Wedding</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"I took up learning music at 68 & decided to go for the ukulele. I was with Mat for a year & progressed further than I thought was possible. That is thanks to his humour, patience & ability. He is a great teacher & I would recommend him to anyone of any age!"</p>
+                    <cite>— Bob T - Student</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"6 months in and loving learning with Matt. As an adult learner, Matt just goes with the flow of what I want to do and what I want to play. It's not just scales and boring pieces, I'm learning cool stuff. Thanks Matt!"</p>
+                    <cite>— Richard H - Student</cite>
+                </blockquote>
+            </div>
+            <a href="https://www.google.com/maps/place/Frances+Narayani+Baker/@50.8231929,0.0465734,12z/data=!4m8!3m7!1s0x83c4c03116a659c7:0xaa0e3ba9e5090d31!8m2!3d50.8232219!4d0.1289732!9m1!1b1!16s%2Fg%2F11ygl4wwb5?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener"><button class="cta">More Reviews</button></a>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="card contact">
+            <h2>Get In Touch</h2>
+            <section class="features">
+                <div class="feature">
+                    <i class="bi bi-envelope-at"></i>
+                    <h3>Email</h3>
+                    <!-- <p>Contact for a free consultation</p> -->
+                    <a href="mailto:francesnarayanibaker@gmail.com"><button class="cta">Email Us</button></a>
+                </div>
+                <div class="feature">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <h3>Phone</h3>
+                    <!-- <p>Let's discuss your specific needs</p> -->
+                    <a href="tel:+4407976016103"><button class="cta">Call / Text Now</button></a>
+                </div>
+                <div class="feature">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Studio</h3>
+                    <!-- <p>East Sussex (UK)</p> -->
+                    <!-- <br> -->
+                    <a href="https://maps.app.goo.gl/xLrn3Hy6X6aX4E8p9" target="_blank" rel="noopener"><button class="cta">G-Maps</button></a>
+                </div>
+            </section>
+
+            <!-- <details>
+			    <summary><span class="cta">Fill a Form</span></summary>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <select>
+                        <option value="">I'm interested in...</option>
+                        <option value="lessons">Music Lessons</option>
+                        <option value="performance">Booking a Performance</option>
+                        <option value="composition">Commissioning Music</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="cta">Send Message</button>
+                </form>
+            </details> -->
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/francesnarayanibaker/" target="_blank" rel="noopener"><i class="bi bi-instagram" title="Instagram"></i></a>
+            <a href="https://www.facebook.com/frances.narayani.baker/" target="_blank" rel="noopener"><i class="bi bi-facebook" title="Facebook"></i></a>
+            <a href="https://www.youtube.com/@NarayaniKirtan" target="_blank" rel="noopener"><i class="bi bi-youtube" title="YouTube"></i></a>
+            <a href="https://francesnarayanibaker.bandcamp.com/" target="_blank" rel="noopener"><i class="bi bi-suit-diamond-fill" title="Bandcamp"></i></a>
+            <a href="https://share.google/IEazUCCgmDUl1PNHJ" target="_blank" rel="noopener"><i class="bi bi-google" title="G-Reviews"></i></a>
+            <!-- <a href="https://musicbrainz.org/artist/18c39086-f606-4fdf-ba03-85aec6dfb7ba" target="_blank" rel="noopener"><img src="/css/icons/musicbrainz.svg" class="bi bi-musicbrainz" title="MusicBrainz" style="width: 1.5rem; height: 1.667rem; margin-bottom: -0.2rem;">
+            </a> -->
+        </div>
+        <div class="footer-row">
+            <a href="#home">
+                <img src="favicon.svg" alt="Frances Narayani Baker Logo" class="logo">
+            </a>
+            &copy; 2026 Frances Narayani Baker. All rights reserved.
+        </div>
+    </footer>
+
+	<!-- <div class="foot-bar">
+		<span>
+			<a>
+			<span>&#9874;</span>
+            </a>
+		</span>
+	</div> -->
+
+    <!-- MODALs -->
+	<!-- Controls MODAL -->
+	<!-- <div id="controls-modal">
+	    <span class="close">&cross;</span> -->
+
+		<!--Theme switch-->
+		<!-- <input type="checkbox" id="themeSwitch" name="theme-switch" class="theme-switch__input" />
+		<label for="themeSwitch" class="theme-switch__label">
+		  <span>Switch theme</span>
+		</label> -->
+
+		<!--Gap switch-->
+		<!-- <span class="range">
+			<datalist id="values">
+		  	<option value="-2" label="1"></option>
+		  	<option value="-1" label="2"></option>
+		  	<option value="0" label="3"></option>
+		  	<option value="1" label="4"></option>
+		  	<option value="2" label="5"></option>
+		  </datalist>
+		  <input type="range" min="-2" max="2" value="0" step="1" list="values" id="gapSwitch"name="gap-switch" class="gap-switch__input"/>
+		  <label for="gapSwitch" class="gap-switch__label">
+		    <span>Font size</span>
+		  </label>
+		</span> -->
+	<!-- </div> -->
+
+    <script src="js/content.js"></script>
+    <!-- <script src="js/carousels.js"></script> -->
+    <script src="js/main.js"></script>
+    <!-- free Bootstrap ICONS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-icons.css"> -->
+    <style>
+/*!
+ * Bootstrap Icons v1.13.1 (https://icons.getbootstrap.com/)
+ * Copyright 2019-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
+ */
+
+@font-face {
+  /* font-display: block; */
+  font-display: swap;
+  font-family: "bootstrap-icons";
+  src: url("css/fonts/bootstrap-icons.woff2") format("woff2"),
+       url("css/fonts/bootstrap-icons.woff") format("woff");
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bi-chevron-left::before { content: "\f284"; }
+.bi-chevron-right::before { content: "\f285"; }
+.bi-instagram::before { content: "\f437"; }
+.bi-facebook::before { content: "\f344"; }
+.bi-geo-alt::before { content: "\f3e8"; }
+.bi-google::before { content: "\f3f0"; }
+.bi-play-circle-fill::before { content: "\f4f2"; }
+.bi-soundwave::before { content: "\f57c"; }
+.bi-suit-diamond-fill::before { content: "\f59b"; }
+.bi-telephone-outbound::before { content: "\f5bc"; }
+.bi-youtube::before { content: "\f62b"; }
+.bi-envelope-at::before { content: "\f84c"; }
+    </style>
+</body>
+</html>

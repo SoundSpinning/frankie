@@ -22,100 +22,28 @@
       "year": " (2026)",
       "fetch": "fetchpriority='low'",
       "info": "Music Teaching, Workshops, Events, Weddings"
-    },
-    {
-      "imgId": 4,
-      "file": "mat_baker_schools_1.jpg",
-      "alt": "Mat Baker music teaching, schools",
-      "year": " (2026)",
-      "fetch": "fetchpriority='low'",
-      "info": "Schools Workshops, Percussion"
-    },
-    {
-      "imgId": 5,
-      "file": "mat_baker_perform_10.jpg",
-      "alt": "Mat Baker live events",
-      "year": " (2025)",
-      "fetch": "fetchpriority='low'",
-      "info": "Ceremony - live performance"
-    },
-    {
-      "imgId": 6,
-      "file": "mat_baker_perform_12.jpg",
-      "alt": "Mat Baker Guitar teaching, performing",
-      "year": " (2025)",
-      "fetch": "fetchpriority='low'",
-      "info": "Guitar - live performance"
-    },
-    {
-      "imgId": 7,
-      "file": "mat_baker_perform_4.jpg",
-      "alt": "Mat Baker live music",
-      "year": " (2025)",
-      "fetch": "fetchpriority='low'",
-      "info": "Main Stage Performance"
-    },
-    {
-      "imgId": 8,
-      "file": "profile_6_bouzouki.jpg",
-      "alt": "Mat Baker bouzouki",
-      "year": " (2025)",
-      "fetch": "fetchpriority='low'",
-      "info": "Bouzouki"
-    },
-    {
-      "imgId": 9,
-      "file": "mat_baker_perform_1.jpg",
-      "alt": "Mat Baker Guitar teaching, perform",
-      "year": " (2025)",
-      "fetch": "fetchpriority='low'",
-      "info": "Guitar teaching and performing"
-    },
-    {
-      "imgId": 10,
-      "file": "Bakk Lamp Fall_1.jpg",
-      "alt": "Mat Baker live music",
-      "year": " (2025)",
-      "fetch": "fetchpriority='low'",
-      "info": "Mat live with 'Bakk Lamp Fall'"
-    },
-    {
-      "imgId": 11,
-      "file": "Mat_Baker_Music_logo.jpg",
-      "alt": "Mat Baker Music logo",
-      "year": " (2025)",
-      "fetch": "fetchpriority='low'",
-      "info": "Mat Baker Music logo"
-    },
-    {
-      "imgId": 12,
-      "file": "Guitar Man.jpg",
-      "alt": "Mat Baker Music drawing",
-      "year": " (2025)",
-      "fetch": "fetchpriority='low'",
-      "info": "Mat Baker Music - guitar man"
     }
   ],
   "videos": [
     {
       "Id": 1,
-      "ytId": "txP4tpgor30",
-      "info": "Mat Baker - Guitar Showreel"
+      "ytId": "PORcSuCbWkw",
+      "info": "Amba Bhavani - Bhavana (Narayani & Mat)"
     },
     {
       "Id": 2,
-      "ytId": "fDIsBB-7On8",
-      "info": "Mat Baker ukulele - 'Ain't no Sunshine'"
+      "ytId": "Ify2uiigpvw",
+      "info": "We Are One - Kirtan Brighton"
     },
     {
       "Id": 3,
-      "ytId": "1e-r-2UogYc",
-      "info": "Mat Baker - Live Performance"
+      "ytId": "w3G21Oks5FQ",
+      "info": "Kirtan at the Life Centre"
     },
     {
       "Id": 4,
-      "ytId": "xwa0W51OCjA",
-      "info": "Mat Baker - Percussion Demo"
+      "ytId": "AdRYntUbyhM",
+      "info": "Ganesha Sharanam - Bhavana"
     }
   ],
   "songs": [

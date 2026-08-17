@@ -47,25 +47,25 @@ async function loadContent() {
                 </div>`
     }
 
-    const audio_grid = document.querySelector('.audio-player');
-    const dataSongs = data.songs;
+    // const audio_grid = document.querySelector('.audio-player');
+    // const dataSongs = data.songs;
     // 3.- Append songs to HTML
-    for (const song of dataSongs) {
-      audio_grid.innerHTML +=
-`               <!-- SONG-${song.Id} -->
-                    <div class="audio-item">
-                        <p><i class="bi bi-soundwave"> </i>${song.info}</p>
-                        <audio controls preload="metadata">
-                            <source src="${song.file}" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>`
-    }
+//     for (const song of dataSongs) {
+//       audio_grid.innerHTML +=
+// `               <!-- SONG-${song.Id} -->
+//                     <div class="audio-item">
+//                         <p><i class="bi bi-soundwave"> </i>${song.info}</p>
+//                         <audio controls preload="metadata">
+//                             <source src="${song.file}" type="audio/mpeg">
+//                             Your browser does not support the audio element.
+//                         </audio>
+//                     </div>`
+//     }
 
     // Initialise carousels AFTER DOM is ready
     // initCarousels();
     initVideo();
-    initAudio();
+    // initAudio();
     // initModals();
   } catch (error) {
     console.error('Error loading media data:', error);

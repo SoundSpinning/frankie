@@ -1,9 +1,12 @@
 /* Base Styles */
 /* set global VARIABLES */
 :root {
-    --base-size: 20px;
+    /* --base-size: 20px; */
+    --base-size: 18px;
     --gap: 1.5rem;
-    --primary: rgb(175, 164, 147);
+    --background: rgba(220, 212, 200, 0.5);
+    --background-2: rgba(220, 212, 200, 1);
+    --background-dark: rgba(175, 164, 147, 1);
     --text: #222;
     --text-2: #777;
     /* Dummy 1st var value, it gets recomputed via JS code */
@@ -11,11 +14,12 @@
     /* Page theme */
     --light: whitesmoke;
     --dark: #2c3e50;
-    --gradLight: rgb(67, 89, 45);
-    --background: #dcd4c8;
+    /* --accent: rgba(67, 89, 45, 1); */
+    --accent: rgba(127, 132, 106, .75);
+    --nav-accent: rgba(127, 132, 106, 1);
     --nav-gradDark: rgba(0, 0, 0, 0.9);
-    --nav-gradLight: rgba(0, 0, 0, 0.7);
-    --nav-background: linear-gradient(0deg, var(--nav-gradLight), var(--nav-gradDark), var(--nav-gradLight));
+    /* --nav-gradLight: rgba(0, 0, 0, 0.7);
+    --nav-background: linear-gradient(0deg, var(--nav-gradLight), var(--nav-gradDark), var(--nav-gradLight)); */
 }
 
 html {
@@ -46,20 +50,29 @@ body {
 }
 
 h1, h2, h3, h4 {
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
+    color: var(--accent);
 }
 
-h3 {
+h1 {
+    font-size: 1.75rem;
+    color: var(--nav-accent);
+}
+
+h4 {
     padding-top: 1rem;
 }
 
 a {
     /* text-decoration: none; */
-    color: var(--gradLight);
+    padding: 0.5rem;
+    color: var(--nav-accent);
 }
 
 a:hover {
     color: var(--light);
+    /* color: var(--text); */
+    background-color: var(--background-dark);
 }
 
 /* Add ANIMATIONs */
@@ -79,7 +92,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--primary);
+    background: var(--background-dark);
     color: var(--light);
     z-index: 1;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -121,10 +134,10 @@ a:hover {
     line-height: initial;
 }
 
-.branding-text h1 {
-    color: var(--gradLight);
+/* .branding-text h1 {
+    color: var(--accent);
     font-size: 1.75rem;
-}
+} */
 
 .branding-text:hover h1 {
     color: var(--light);
@@ -155,7 +168,7 @@ li, .main-nav li {
 }
 
 .main-nav a:hover {
-    color: var(--gradLight);
+    color: var(--nav-accent);
 }
 
 .main-nav a::after,
@@ -229,7 +242,7 @@ li, .main-nav li {
 /* @media (max-width: 768px) { */
 /* @media (max-width: 1200px) { */
 /* @media (max-width: 992px) { */
-@media (max-width: 1120px) {
+@media (max-width: 1134px) {
     .main-nav {
         position: fixed;
         top: 0;
@@ -299,11 +312,11 @@ main > section {
 
 /* Cards */
 .card {
-    display: flex;
-    flex-direction: column;
+    background-color: var(--background-2);
     border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.95);
+    /* box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.95); */
+    box-shadow: 0 0.5rem 0.5rem var(--accent);
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
@@ -314,30 +327,31 @@ main > section {
 
 .card:hover {
     transform: scale(1.0075);
-    box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.7);
+    /* box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.7); */
+    box-shadow: 0.5rem 0rem 0.5rem var(--accent);
 }
 
-.card:hover, 
+/* .card:hover, 
 .card:focus, 
 .card:active {
-    background-color:var(--primary);
-}
+    background-color:var(--background-dark);
+} */
 
-.card.about:hover,
+/* .card.about:hover,
 .card.contact:hover {
     transform: none;
     background-color:initial;
-}
+} */
 
 .card-content {
-    padding: 1.5rem;
+    padding: var(--gap);
 }
 
 .card h2 {
-    font-size: 2rem;
-    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
     padding-bottom: 0.625rem;
-    border-bottom: 2px solid var(--gradLight);
+    border-bottom: 2px solid var(--accent);
     display: inline-block;
 }
 
@@ -360,7 +374,8 @@ main > section {
 .cta {
     display: inline-block;
     width: max-content;
-    background: var(--primary);
+    /* background: var(--background-dark); */
+    background: var(--accent);
     color: var(--text);
     padding: 0.7rem 0.7rem;
     border: 2px solid var(--light);
@@ -372,7 +387,8 @@ main > section {
 }
 
 .cta:hover {
-    background: var(--nav-background);
+    /* background: var(--nav-background); */
+    background-color: var(--text);
     /* border: 1px solid var(--light); */
     color: var(--light);
 }
@@ -445,9 +461,6 @@ summary {
   .card-main-image {
     float: none;
     margin: 0 auto 0.75rem auto;
-    /* align-content: center; */
-    /* width: 50%; */
-    /* margin: 0 1rem 0.75rem 0; */
   }
 
   .social-links a {
@@ -497,7 +510,7 @@ audio:focus-within {
 
 blockquote {
     background: var(--light);
-    padding: 1.5rem;
+    padding: var(--gap);
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
@@ -512,29 +525,49 @@ cite {
     color: var(--text-2);
 }
 
+.albums {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+    /* CROSS flex axis */
+    /* align-items: center; */
+    /* MAIN flex axis */
+    justify-content: space-around;
+}
+
+.albums img {
+    max-width: 240px;
+}
+
 
 /* Contact */
 .contact {
-    padding: 2rem;
+    padding: var(--gap);
 }
 
 .contact h2 {
+    display: block;
     text-align: center;
     /* margin-bottom: 1rem; */
 }
 
 /* Contact blocks */
 .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.25rem;
-    margin-top: 0.5rem;
-    /* padding-bottom: 2rem; */
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+    /* CROSS flex axis */
+    /* align-items: center; */
+    /* MAIN flex axis */
+    justify-content: space-around;
 }
 
 .feature {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
     background: var(--light);
-    padding: 0.5rem;
+    padding: 0 1rem;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -542,19 +575,18 @@ cite {
 
 .feature:hover {
     transform: scale(1.0075);
-    background-color: var(--primary);
+    background-color: var(--background-dark);
 }
 
 .feature i {
     font-size: 2.5rem;
-    color: var(--gradLight);
-    /* color: rgb(162, 104, 0); */
-    margin-bottom: 1rem;
+    color: var(--accent);
+    /* margin-bottom: 1rem; */
 }
 
 .feature h3 {
     font-size: 1.4rem;
-    color: var(--gradLight);
+    color: var(--accent);
     /* color: rgb(162, 104, 0); */
     padding: 0;
 }
@@ -569,15 +601,15 @@ cite {
     text-align: center;
     padding: 2rem;
     /* background: var(--nav-background); */
-    background: var(--primary);
+    background: var(--background-dark);
     /* color: var(--light); */
     color: var(--text);
 }
 
-.social-links {
+/* .social-links {
     margin-bottom: 1rem;
-    /* padding: unset; */
-}
+    padding: unset;
+} */
 
 .social-links a {
     color: var(--light);
@@ -588,7 +620,7 @@ cite {
 }
 
 .social-links a:hover {
-    color: var(--gradLight);
+    color: var(--accent);
     background-color: var(--light);
     border-radius: 0.5rem;
 }
@@ -607,7 +639,7 @@ cite {
 }
 
 .privacy summary:hover {
-    color: var(--gradLight);
+    color: var(--accent);
     background-color: var(--light);
 }
 
@@ -615,6 +647,7 @@ cite {
 .footer-row .logo {
     width: 2rem;
     height: 2rem;
+    padding: 0;
 }
 
 /* Bandcamp icon */
